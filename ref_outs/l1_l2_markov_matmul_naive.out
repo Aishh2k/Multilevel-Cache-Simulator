@@ -1,0 +1,29 @@
+Cache Settings
+--------------
+L1 (C,B,S): (10,6,1). Replace policy: MIP
+L2 (C,B,S): (15,6,3). Replace policy: LIP. Prefetch algo: Markov. Prefetch row count: 100
+
+Cache Statistics
+----------------
+Reads: 494452
+Writes: 5548
+
+L1 accesses: 500000
+L1 hits: 332230
+L1 misses: 167770
+L1 hit ratio: 0.664
+L1 miss ratio: 0.336
+L1 average access time (AAT): 19.439
+Write-backs from L1: 1521
+
+L2 reads: 167770
+L2 writes: 1521
+L2 read hits: 81837
+L2 read misses: 85933
+L2 read hit ratio: 0.488
+L2 read miss ratio: 0.512
+L2 average access time (AAT): 51.377
+
+L2 prefetches issued: 33508
+L2 prefetch hits: 33297
+L2 prefetch misses: 211
