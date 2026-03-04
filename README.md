@@ -1,6 +1,6 @@
 # Multilevel Cache Simulator
 
-A configurable two-level (L1/L2) cache simulator written in C++11, built for the Georgia Tech HPCA course (CS 6290 / ECE 6100).
+A configurable two-level (L1/L2) cache simulator written in C++, built for the Georgia Tech HPCA course CS 6290.
 
 ## Overview
 
@@ -57,13 +57,6 @@ make clean    # remove binaries and object files
 ./cachesim 14 6 2 20 6 4 2 traces/gcc.trace
 ```
 
-## Validation
-
-```bash
-make validate_undergrad   # run undergrad test suite
-make validate_grad        # run grad test suite
-```
-
 ## Prefetcher Details
 
 | Mode | Description |
@@ -72,20 +65,6 @@ make validate_grad        # run grad test suite
 | **Plus-One (1)** | Always prefetches the next sequential block into L2 on an L2 miss |
 | **Markov (2)** | Builds a Markov transition table from L2 miss history; prefetches the most likely next block |
 | **Hybrid (3)** | Uses Markov predictor; falls back to Plus-One if no Markov prediction is available |
-
-## Docker (Optional)
-
-Docker scripts are provided for a consistent build environment:
-```bash
-# macOS
-bash 6290docker-macos.sh
-
-# Linux
-bash 6290docker-linux.sh
-
-# Windows
-6290docker.bat
-```
 
 ## Stats Output
 
